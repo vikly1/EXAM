@@ -312,6 +312,7 @@ color: var(--head-text-color);
   width: 1160px;
   max-width: 100%;
   font-size: 1.5rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .blue__ocean-gradient{
@@ -660,7 +661,58 @@ color: var(--head-text-color);
   color: var(--main-text);
 }
 
+.possible {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 108px;
+  margin-bottom: 60px;
+  width: 1160px;
+}
 
+.possible__title {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+
+
+.possible__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.possible__art {
+  width: 260px;
+  height: 383px;
+  background: rgba(235, 250, 255, 0.7);
+  border-radius: 20px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.possible__art-content{
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.possible__art-img{
+  width: 75px;
+  height: 75px;
+  
+}
+
+.possible__art-text{
+  margin-top: 40px;
+  width: 200px;
+  font-size: 1rem ;
+}
 
 .phot1{
   background-image: url(/assets/img/balet.jpg);
@@ -675,6 +727,164 @@ color: var(--head-text-color);
 .phot3{
   background-image: url(/assets/img/bears.jpg);
   background-size: cover;
+}
+
+
+.reg__dream{
+  display: flex;
+  margin-bottom: 600px;
+  background: #EBFAFF;
+  width: 1160px;
+  height: 957px;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  position: relative;
+}
+
+.reg__title{
+  font-size: 2.5rem;
+  width: 460px;
+  height: 100px;
+  
+}
+
+.reg__card{
+  display: block;
+  width: 560px;
+  height: 685px;
+  z-index: 100;
+  position: relative;
+  
+}
+
+.reg__card-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.reg__card1{
+  display: flex;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  height: 324.59px;
+  background: #F9F9F9;
+}
+
+.reg__card1-place{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1__svg{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.card1__svg-anim{
+  transition: 0.3s;
+}
+
+.card1__svg-anim:hover{
+  rotate: 45deg;
+  transform: scale(90%);
+}
+
+.card1__text{
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #999999;
+}
+
+.card1__href{
+  color: var(--buttom-color);
+  border-bottom: 2px dashed;
+  text-decoration: none;
+}
+
+.reg__card2{
+  display: flex;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  height: 360px;
+  background: var(--head-text-color);
+  
+
+}
+
+.card2__main{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20.41px;
+  
+}
+
+.card2__inp-main{
+  border-radius: 5px;
+  border: 1px solid #E9E9E9;
+  background: #F9F9F9;
+  color: #737373;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  transition: transform 0.2s;
+}
+
+.card2__inp-size1{
+  width: 520px;
+  height: 44px;
+}
+
+.card2__inp-size2{
+  width: 520px;
+  height: 80px;
+  padding-bottom: 40px;
+}
+
+.card2__inp-main:focus{
+  outline: none;
+}
+
+.card2__inp-main:hover{
+  transform: scale(105%);
+}
+
+.card2__purpose{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card2__btn{
+  margin: 0 auto;
+  height: 44px;
+  width: 140px;
+  background: var(--but2-color);
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.card2__btn:hover{
+  background: none;
+  transform: scale(105%);
+  border: solid 1px var(--but2-color);
+}
+
+.red__maket{
+  position: absolute;
+  width: 622.15px;
+  height: 586px;
+  z-index: 2;
 }
 
 .footer{
