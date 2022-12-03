@@ -583,11 +583,13 @@ color: var(--head-text-color);
 
 .yourdream-wind2__text{
  height: 340px;
-
-  
 }
 
-.youdream-wind2__numtext{
+.yourdream-wind2__hr{
+  color: var(--buttom-color);
+}
+
+.yourdream-wind2__numtext{
   width: 338.93px;
   display: flex;
   align-items: center;
