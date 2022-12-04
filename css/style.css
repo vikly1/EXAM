@@ -200,8 +200,7 @@ color: var(--head-text-color);
   display: flex;
   font-size: 5.625rem;
   line-height: 80px;
-  font-weight: bold;
-  
+  font-weight: 900;
   max-width: 100%;
   line-height: 10px;
   margin-top: 200px;
@@ -214,7 +213,6 @@ color: var(--head-text-color);
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
-  
   line-height: 20px;
   max-width: 100%;
   margin-top: -40px;
@@ -270,6 +268,7 @@ color: var(--head-text-color);
     color: var(--head-text-color);
     height: 50px;
     font-size: 0.875rem;
+    font-weight: 700;
 }
 
 
@@ -286,6 +285,7 @@ color: var(--head-text-color);
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
+  font-weight: 700;
 }
 
 
@@ -298,6 +298,7 @@ color: var(--head-text-color);
 }
 
 .blue__ocean{
+  font-weight: 700;
   background: #EBFAFF;
   border-radius: 20px;
   border: none;
@@ -348,7 +349,7 @@ color: var(--head-text-color);
   margin: 0;
   font-size: 2.5rem;
   max-width: 100%;
-  
+  font-weight: 700;
 }
 
 
@@ -358,7 +359,6 @@ color: var(--head-text-color);
   align-items: center;
   width: 200px;
   height: 50px;
-  justify-content: end;
   max-width: 100%;
   padding: 11px 25px;
   gap: 10px;
@@ -369,6 +369,7 @@ color: var(--head-text-color);
   background: transparent;
   color: var(--buttom-color);
   font-size: 0.875rem;
+  font-weight: 700;
 }
 
 .dream__people{
@@ -403,6 +404,10 @@ color: var(--head-text-color);
   padding: 20px;
   height: 263px;
   
+}
+
+.dmt{
+  font-weight: 700;
 }
 
 .dream__main p {
@@ -474,6 +479,7 @@ color: var(--head-text-color);
   width: 204px;
   flex-wrap: wrap;
   gap: 2px;
+  font-weight: 700;
 }
 
 .summ__limit{
@@ -531,7 +537,7 @@ color: var(--head-text-color);
   width: 441px;
   max-height: 100%;
   max-width: 100%;
-  
+  font-weight: 700;
   padding: 30px;
   border-radius: 20px;
   border: 1px solid rgba(3, 186, 254, 0.15);
@@ -540,19 +546,18 @@ color: var(--head-text-color);
   
 }
 
-.wnid1__text1 {
+.wind1__text1 {
   font-size: 1.5rem;
 }
 
-.wnid1__text2 {
+.wind1__text2 {
   font-size: 1.5rem;
   color: var(--buttom-color);
 }
 
-.wnid1__text3 {
+.wind1__text3 {
  font-size: 1rem;
  color: #999999;
-
 }
 
 .yourdream-wind2{
@@ -577,7 +582,7 @@ color: var(--head-text-color);
   font-size: 1.5rem;
   width: 92%;
   padding-left: 15px;
-
+  font-weight: 700;
 }
 
 
@@ -601,6 +606,8 @@ color: var(--head-text-color);
   color: #03BAFE;
   position: relative;
   padding-right: 15px;
+  font-weight: 700;
+  margin-left: 10px;
 }
 
 .yourdream-wind2__number::before{
@@ -618,7 +625,10 @@ color: var(--head-text-color);
 }
 
 
-
+.yourdream-wind2__txt{
+  font-weight: 400;
+  margin-left: 10px;
+}
 
 
 .yourdream__btns{
@@ -628,6 +638,7 @@ color: var(--head-text-color);
 }
 
 .yourdream__btn1{
+  font-weight: 700;
   padding: 11px 25px;
   gap: 10px;
   background: var(--but2-color);
@@ -641,7 +652,7 @@ color: var(--head-text-color);
 
 .yourdream__btn2{
   padding: 11px 25px;
-  
+  font-weight: 700;
   background: var(--buttom-color);
   border-radius: 5px;
   cursor: pointer;
@@ -675,8 +686,6 @@ color: var(--head-text-color);
 .possible__title {
   display: flex;
   flex-direction: column;
-  
-
 }
 
 
@@ -716,6 +725,10 @@ color: var(--head-text-color);
   font-size: 1rem ;
 }
 
+.possible__art-txt {
+  font-weight: 700;
+}
+
 .phot1{
   background-image: url(/assets/img/balet.jpg);
   background-size: cover;
@@ -735,7 +748,7 @@ color: var(--head-text-color);
 .reg__dream{
   display: flex;
   margin: 0 auto;
-  
+  margin-bottom: 60px;
   background: #EBFAFF;
   width: 1160px;
   height: 957px;
@@ -750,7 +763,7 @@ color: var(--head-text-color);
   font-size: 2.5rem;
   width: 460px;
   height: 100px;
-  
+  font-weight: 700;
 }
 
 .reg__card{
@@ -875,6 +888,7 @@ color: var(--head-text-color);
   cursor: pointer;
   align-items: center;
   transition: 0.3s;
+  font-weight: 700;
 }
 
 .card2__btn:hover{
@@ -904,6 +918,7 @@ color: var(--head-text-color);
   order: 1;
   margin-top: 770px;
   padding-left: 40px;
+  font-weight: 700;
 }
 
 .reg__stat-text1{
@@ -932,6 +947,165 @@ color: var(--head-text-color);
   font-size: 1rem;
 }
 
+.hq{
+  font-weight: 400;
+  font-size: 1rem;
+  display: none;
+  width: 1100px;
+  max-width: 100%;
+  height: 114px;
+  transition: all 0.5s;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.question__title{
+  font-size: 2.5rem;
+}
+
+.question__list {
+  display: flex;
+  margin-top: 47px;
+}
+
+.question__list-content input{
+  display: none;
+}
+
+.question__container{
+  cursor: pointer;
+}
+
+.question__list-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.question__textsvg{
+  display: flex;
+  font-weight: 400;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  padding-right: 50px;
+  width: 1160px;
+  border-bottom: 1px solid #F9F9F9;
+  border-top: 1px solid #F9F9F9;
+  
+}
+
+.question__svg{
+  transition: all 0.5s;
+}
+
+
+
+
+#checkbox1:checked ~
+
+.qu1 img {
+  transform: rotate(180deg);
+}
+
+
+#checkbox1:checked ~
+
+.qu1 div:nth-child(2){
+  display: block;
+  
+}
+
+
+#checkbox1:checked ~
+
+.qu1 div{
+  border: none;
+}
+
+#checkbox2:checked ~
+
+.qu2 div:nth-child(2){
+  display: block;
+  
+}
+
+#checkbox2:checked ~
+
+.qu2 div{
+  border: none;
+}
+
+#checkbox2:checked ~
+
+.qu2 img {
+  transform: rotate(180deg);
+}
+
+#checkbox3:checked ~
+
+.qu3 div:nth-child(2){
+  display: block;
+  
+}
+
+
+#checkbox3:checked ~
+
+.qu3 div{
+  border: none;
+}
+
+#checkbox3:checked ~
+
+.qu3 img {
+  transform: rotate(180deg);
+}
+
+#checkbox4:checked ~
+
+.qu4 div:nth-child(2){
+  display: block;
+  
+}
+
+
+#checkbox4:checked ~
+
+.qu4 div{
+  border: none;
+}
+
+#checkbox4:checked ~
+
+.qu4 img {
+  transform: rotate(180deg);
+}
+
+#checkbox5:checked ~
+
+.qu5 div:nth-child(2){
+  display: block;
+  
+}
+
+
+#checkbox5:checked ~
+
+.qu5 div{
+  border: none;
+}
+
+#checkbox5:checked ~
+
+.qu5 img {
+  transform: rotate(180deg);
+}
+
 .support{
   margin-top: 108px;
 }
@@ -946,6 +1120,7 @@ color: var(--head-text-color);
 .support__prev-text{
   margin-bottom: 19.97px;
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .support__emails{
@@ -957,7 +1132,7 @@ color: var(--head-text-color);
 .support__email{
   color: var(--buttom-color);
   font-size: 0.875rem;
-  
+  font-weight: 600;
 }
 
 .support__email:hover{
@@ -1008,6 +1183,7 @@ color: var(--head-text-color);
   color: #03BAFE;
   font-size: 0.875rem;
   padding-left: 20px;
+  font-weight: 600;
 }
 
 
@@ -1060,9 +1236,6 @@ color: var(--head-text-color);
 .social__svg{
   z-index: 3;
 }
-
-
-
 
 .footer__end  {
   color: gray;
