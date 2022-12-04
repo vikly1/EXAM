@@ -953,8 +953,10 @@ color: var(--head-text-color);
   display: none;
   width: 1100px;
   max-width: 100%;
-  height: 114px;
+  height: 104px;
   transition: all 0.5s;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .question{
@@ -963,6 +965,7 @@ color: var(--head-text-color);
   margin-top: 60px;
   width: 1160px;
   margin: 0 auto;
+  
 }
 
 .question__title{
@@ -996,15 +999,21 @@ color: var(--head-text-color);
   width: 1160px;
   border-bottom: 1px solid #F9F9F9;
   border-top: 1px solid #F9F9F9;
-  
+  transition: filter 0.3s;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .question__svg{
   transition: all 0.5s;
 }
 
+#checkbox1:checked ~
 
-
+.qu1{
+  box-shadow: inset 0 0 25px 0 var(--ram-color), 0 0 6px 0 var(--ram-color);
+  border-radius: 20px;
+}
 
 #checkbox1:checked ~
 
@@ -1029,6 +1038,13 @@ color: var(--head-text-color);
 
 #checkbox2:checked ~
 
+.qu2{
+  box-shadow: inset 0 0 25px 0 var(--ram-color), 0 0 6px 0 var(--ram-color);
+  border-radius: 20px;
+}
+
+#checkbox2:checked ~
+
 .qu2 div:nth-child(2){
   display: block;
   
@@ -1044,6 +1060,13 @@ color: var(--head-text-color);
 
 .qu2 img {
   transform: rotate(180deg);
+}
+
+#checkbox3:checked ~
+
+.qu3{
+  box-shadow: inset 0 0 25px 0 var(--ram-color), 0 0 6px 0 var(--ram-color);
+  border-radius: 20px;
 }
 
 #checkbox3:checked ~
@@ -1068,6 +1091,13 @@ color: var(--head-text-color);
 
 #checkbox4:checked ~
 
+.qu4{
+  box-shadow: inset 0 0 25px 0 var(--ram-color), 0 0 6px 0 var(--ram-color);
+  border-radius: 20px;
+}
+
+#checkbox4:checked ~
+
 .qu4 div:nth-child(2){
   display: block;
   
@@ -1084,6 +1114,13 @@ color: var(--head-text-color);
 
 .qu4 img {
   transform: rotate(180deg);
+}
+
+#checkbox5:checked ~
+
+.qu5{
+  box-shadow: inset 0 0 25px 0 var(--ram-color), 0 0 6px 0 var(--ram-color);
+  border-radius: 20px;
 }
 
 #checkbox5:checked ~
