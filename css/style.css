@@ -487,8 +487,8 @@ color: var(--head-text-color);
 }
 
 .yourdream{
- margin-top: 70px;
-  
+  margin-top: 70px;
+  margin-bottom: 117px;
   
 }
 
@@ -672,6 +672,38 @@ color: var(--head-text-color);
   background: none;
   box-shadow: inset 0 0 30px 0 var(--buttom-color), 0 0 6px 0 var(--buttom-color);
   color: var(--main-text);
+}
+
+.people{
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.people__title-text{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.people__container {
+  display: flex;
+}
+
+.people__cards {
+  display: flex;
+  grid-gap: 40px;
+  
+}
+
+.people__card {
+
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px rgba(50, 50, 71, 0.05);
+  border-radius: 20px;
+  width: 360px;
+  height: 325px;
+  padding: 30px;
 }
 
 .possible {
@@ -1279,8 +1311,4 @@ color: var(--head-text-color);
   display: flex;
   justify-content: center;
   margin-top: 54px;
-}
-
-.people{
-  display: none;
 }
