@@ -675,7 +675,7 @@ color: var(--head-text-color);
 }
 
 .people{
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 1160px;
   margin: 0 auto;
