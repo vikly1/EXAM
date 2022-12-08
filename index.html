@@ -9,11 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/normalize.css">
   </head>
-<body  class="body" >
+<body  class="body">
 
 <header class="header">
   <div class="header__main">
@@ -22,8 +21,8 @@
         <img src="/assets/img/logo.svg" width="200px" height="43px">
       </a>
     </div>
-    <nav class="header__container">
-      <ul class="header__container-list">
+    <nav class="header-container">
+      <ul class="header-container__list">
         <li>
           <a href="#" class="menu__link line size">О нас</a>
         </li>
@@ -221,42 +220,77 @@
       <div class="people__title-text">
         <p>Эти люди уже исполнили свои мечты</p>
       </div>
-      <div class="people__container">
-        <article class="people__cards">
-          <div class="people__card">
-            <p>Great community!</p>
-            <p>I want to express my admiration of a brilliant project and a great community. Thanks to nacometa.com I went to study in the UK, which I could have only dreamed of before. With your help I succeeded, and let me say a big thank you to everyone! </p>
-            <img src="/assets/img/man.png" alt="">Max from the UK
-          </div>
-          <div class="people__card">
-            <p>Dreams come true!</p>
+      <div class="people-slider">
+        <article class="people__slides">
+            <div class="people__slide" id="p-slider__1">
+              <p class="people__slide-p1">Great community!</p>
+              <p>I want to express my admiration of a brilliant project and a great community. Thanks to nacometa.com I went to study in the UK, which I could have only dreamed of before. With your help I succeeded, and let me say a big thank you to everyone! </p>
+              <div class="people__img">
+                <img src="/assets/img/man.svg" alt="">
+                <div>Max from the UK</div>
+              </div>
+              <a class="people-slide__prev" href="#p-slider__7"></a>
+              <a class="people-slide__next" href="#p-slider__2"></a>
+            </div>
+          <div class="people__slide" id="p-slider__2">
+            <p class="people__slide-p1">Dreams come true!</p>
             <p>I joined Nacometa to try to fundraise money for my own pizza delivery business. And I am amazed by the way it’s working! I am certainly on the way to my dream, thanks to the brilliant team and 24/7 support! </p>
-            <img src="/assets/img/man.png" alt="">John from Poland
+            <div class="people__img-next">
+              <img src="/assets/img/man.svg" alt="">
+              <div>John from Poland</div>
+            </div>
+            <a class="people-slide__prev" href="#p-slider__1"></a>
+            <a class="people-slide__next" href="#p-slider__3"></a>
           </div>
-          <div class="people__card">
-            <p>Every dream matters!</p>
-            <p>I tried to fundraise money for my ecological campaign using different services, but they didn’t give me any significant results. Then I got to know about Nacometa and voila! I have the money to save the forest I live nearby.</p>
-            <img src="/assets/img/man.png" alt=""> Martin from France
-          </div>
-          <div class="people__card">
-            <p>Dreams come true!</p>
+          <div class="people__slide" id="p-slider__3">
+            <p class="people__slide-p1">Every dream matters!</p>
             <p>I joined Nacometa to try to fundraise money for my own pizza delivery business. And I am amazed by the way it’s working! I am certainly on the way to my dream, thanks to the brilliant team and 24/7 support! </p>
-            <img src="/assets/img/man.png" alt="">John from Poland
+            <div class="people__img-next">
+              <img src="/assets/img/man.svg" alt="">
+              <div>Martin from France</div>
+            </div>
+            <a class="people-slide__prev" href="#p-slider__2"></a>
+            <a class="people-slide__next" href="#p-slider__4"></a>
           </div>
-          <div class="people__card">
-            <p>Dreams come true!</p>
+          <div class="people__slide" id="p-slider__4">
+            <p class="people__slide-p1">Dreams come true!</p>
             <p>I joined Nacometa to try to fundraise money for my own pizza delivery business. And I am amazed by the way it’s working! I am certainly on the way to my dream, thanks to the brilliant team and 24/7 support! </p>
-            <img src="/assets/img/man.png" alt="">John from Poland
+            <div class="people__img-next">
+              <img src="/assets/img/man.svg" alt="">
+              <div>John from Poland</div>
+            </div>
+            <a class="people-slide__prev" href="#p-slider__3"></a>
+            <a class="people-slide__next" href="#p-slider__5"></a>
           </div>
-          <div class="people__card">
-            <p>Dreams come true!</p>
+          <div class="people__slide" id="p-slider__5">
+            <p class="people__slide-p1">Dreams come true!</p>
             <p>I joined Nacometa to try to fundraise money for my own pizza delivery business. And I am amazed by the way it’s working! I am certainly on the way to my dream, thanks to the brilliant team and 24/7 support! </p>
-            <img src="/assets/img/man.png" alt="">John from Poland
+            <div class="people__img-next">
+              <img src="/assets/img/man.svg" alt="">
+              <div>John from Poland</div>
+            </div>
+            <a class="people-slide__prev" href="#p-slider__4"></a>
+            <a class="people-slide__next" href="#p-slider__6"></a>
           </div>
-          <div class="people__card">
-            <p>Dreams come true!</p>
+          <div class="people__slide" id="p-slider__6">
+            <p class="people__slide-p1">Dreams come true!</p>
             <p>I joined Nacometa to try to fundraise money for my own pizza delivery business. And I am amazed by the way it’s working! I am certainly on the way to my dream, thanks to the brilliant team and 24/7 support! </p>
-            <img src="/assets/img/man.png" alt="">John from Poland
+            <div class="people__img-next">
+              <img src="/assets/img/man.svg" alt="">
+              <div>John from Poland</div>
+            </div>
+            <a class="people-slide__prev" href="#p-slider__5"></a>
+            <a class="people-slide__next" href="#p-slider__7"></a>
+          </div>
+          <div class="people__slide" id="p-slider__7">
+            <p class="people__slide-p1">Dreams come true!</p>
+            <p>I joined Nacometa to try to fundraise money for my own pizza delivery business. And I am amazed by the way it’s working! I am certainly on the way to my dream, thanks to the brilliant team and 24/7 support! </p>
+            <div class="people__img-next">
+              <img src="/assets/img/man.svg" alt="">
+              <div>John from Poland</div>
+            </div>
+            <a class="people-slide__prev" href="#p-slider__6"></a>
+            <a class="people-slide__next" href="#p-slider__1"></a>
           </div>
           
         </article>
@@ -268,11 +302,11 @@
         <h1>Возможности</h1>
         <h2>Легкий, быстрый и эффективный способ осуществить свою мечту!</h2>
       </div>
-      <div class="possible__container">
+      <div class="possible-container">
         <div class="possible__art">
           <div class="possible__art-content">
             <div class="possible__art-img">
-              <img src="/assets/img/vozm/free.png" alt="">
+              <img src="/assets/img/vozm/free.svg" alt="">
             </div>
             <div class="possible__art-text">
               <p class="possible__art-txt">Бесплатно</p>
@@ -283,7 +317,7 @@
         <div class="possible__art">
           <div class="possible__art-content">
             <div class="possible__art-img">
-              <img src="/assets/img/vozm/options.png" alt="">
+              <img src="/assets/img/vozm/options.svg" alt="">
             </div>
             <div class="possible__art-text">
               <p class="possible__art-txt">Без посредников</p>
@@ -294,7 +328,7 @@
         <div class="possible__art">
           <div class="possible__art-content">
             <div class="possible__art-img">
-              <img src="/assets/img/vozm/money.png" alt="">
+              <img src="/assets/img/vozm/money.svg" alt="">
             </div>
             <div class="possible__art-text">
               <p class="possible__art-txt">Легко</p>
@@ -306,7 +340,7 @@
         <div class="possible__art">
           <div class="possible__art-content">
             <div class="possible__art-img">
-              <img src="/assets/img/vozm/ant.png" alt="">
+              <img src="/assets/img/vozm/ant.svg" alt="">
             </div>
             <div class="possible__art-text">
               <p class="possible__art-txt">Удобно и безопасно</p>
@@ -366,7 +400,7 @@
         <div class="question__list-content">
           <label for="checkbox1">
             <input type="checkbox" id="checkbox1">
-            <div class="qu1 question__container">
+            <div class="qu1 question-container">
               <div class="question__textsvg">
                 <p>Кампания по сбору средств в сообществе nacometa.com</p>
                 <img src="/assets/img/arrow.svg" alt="" class="question__svg">
@@ -380,7 +414,7 @@
           </label>
           <label for="checkbox2">
             <input type="checkbox" id="checkbox2">
-            <div class="qu2 question__container">
+            <div class="qu2 question-container">
               <div class="question__textsvg">
                 <p>С чего мне начать и как собрать средства в Nacometa?</p>
                 <img src="/assets/img/arrow.svg" alt="" class="question__svg">
@@ -394,7 +428,7 @@
           </label>
           <label for="checkbox3">
             <input type="checkbox" id="checkbox3">
-            <div class="qu3 question__container">
+            <div class="qu3 question-container">
               <div class="question__textsvg">
                 <p>Ограничен ли мой сбор средств в Nacometa по сумме и времени?</p>
                 <img src="/assets/img/arrow.svg" alt="" class="question__svg">
@@ -408,7 +442,7 @@
           </label>
           <label for="checkbox4">
             <input type="checkbox" id="checkbox4">
-            <div class="qu4 question__container">
+            <div class="qu4 question-container">
               <div class="question__textsvg">
                 <p>Как я могу отслеживать результаты моей кампании по сбору средств?</p>
                 <img src="/assets/img/arrow.svg" alt="" class="question__svg">
@@ -422,7 +456,7 @@
           </label>
           <label for="checkbox5">
             <input type="checkbox" id="checkbox5">
-            <div class="qu5 question__container">
+            <div class="qu5 question-container">
               <div class="question__textsvg">
                 <p>Законно ли собирать деньги таким образом и нужно ли платить налоги?</p>
                 <img src="/assets/img/arrow.svg" alt="" class="question__svg">
