@@ -1070,12 +1070,10 @@ img {
   margin: 0 auto;
   height: 44px;
   width: 140px;
-  background: var(--btn2-color);
+  background: var(--btn-color);
   border: none;
   border-radius: 5px;
-  justify-content: center;
   cursor: pointer;
-  align-items: center;
   transition: 0.3s;
   font-weight: 700;
 }
@@ -1083,13 +1081,12 @@ img {
 .card2__btn:hover {
   background: none;
   transform: scale(1.05);
-  border: solid 1px var(--btn2-color);
+  box-shadow: inset 0px 0px 3px 3px var(--btn-color);
 }
 
 .reg__card-left {
   display: flex;
   flex-direction: column;
-
 }
 
 .reg__maket {
@@ -1100,7 +1097,6 @@ img {
   height: 586px;
   margin-top: 117px;
   margin-left: -150px;
-
 }
 
 .reg__stat {
@@ -1120,7 +1116,6 @@ img {
   height: 5px;
   background: rgba(3, 186, 254, 0.2);
   border-radius: 10px;
-
 }
 
 .reg__stat-text2 {
