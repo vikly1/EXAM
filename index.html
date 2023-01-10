@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/normalize.css">
+
 </head>
 
 <body class="body">
@@ -44,22 +45,74 @@
           </li>
         </ul>
       </nav>
-      <div class="header__lang">
-        <button type="button" class="header__lang-btn"><span>Русский</span> <img src="/assets/img/Vector.png"
-            alt=""></button>
-        <ul class="header__lang-spisok">
-          <li><a class="header__lang-select">Русский</a></li>
-          <li><a class="header__lang-select">Английский</a></li>
-          <li><a class="header__lang-select">Немецкий</a></li>
-        </ul>
+      <div class="log_and_lang">
+        <div class="header__lang">
+          <button type="button" class="header__lang-btn"><span>Русский</span> <img src="/assets/img/Vector.png"
+              alt=""></button>
+          <ul class="header__lang-spisok">
+            <li><a class="header__lang-select">Русский</a></li>
+            <li><a class="header__lang-select">Английский</a></li>
+            <li><a class="header__lang-select">Немецкий</a></li>
+          </ul>
+        </div>
+        <div class="user">
+          <a href="#">
+            <img src="/assets/img/user.svg" alt="">
+          </a>
+        </div>
       </div>
-      <div class="user">
-        <a href="#">
-          <img src="/assets/img/user.svg" alt="">
+    </div>
+    <div class="header__main-mobile">
+      <div class="logo__place">
+        <a class="header__logo logo" href="/">
+          <img src="/assets/img/logo.svg" width="200px" height="43px">
         </a>
+      </div>
+      <div class="menu__user-mobile">
+        <div class="user">
+          <a href="#">
+            <img src="/assets/img/user.svg" alt="">
+          </a>
+        </div>
+        <button class="sub__menu-lines">
+          <span class="menu-line" id="#call-request">☰</span>
+        </button>
       </div>
     </div>
   </header>
+
+
+  <div class="dialog__menu" id="#call-request-dialog">
+    <div class="dialog__overlay" id="#call-request-overlay"></div>
+    <div class="dialog-content">
+      <nav class="menu-list" id="call-request-close">
+        <ul>
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Как это работает</a>
+          </li>
+          <li>
+            <a href="#">История успеха</a>
+          </li>
+          <li>
+            <a href="#">Возможности</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="lang__mob">Русский</button>
+      <button class="dialog__close">Закрыть</button>
+    </div>
+  </div>
+
+
   <main>
     <section class="header__bg">
       <div class="title">
@@ -155,6 +208,82 @@
             </div>
           </div>
         </article>
+      </div>
+      <div class="dream__art__slider">
+        <div class="dream__art-container__slide scroll">
+          <article class="dream__art-slide" id="d-slide__1">
+            <div class="dream__phot phot1"></div>
+            <div class="dream__main">
+              <p class="dmt">Делаю ремонт в квартире родителей</p>
+              <p>Всем привет! Меня зовут Ирина и я хочу помочь своим родителям сделать свежий ремонт.Что-то мы собираем
+                своими силами, но...</p>
+              <div>
+                <p class="perevod">Последний перевод 20 мин назад</p>
+              </div>
+              <div class="dream__line1">
+                <div class="dream__linebott1">
+                </div>
+              </div>
+              <div class="summ">
+                <p>
+                  € 3250 собрано
+                </p>
+                <p class="summ__limit">
+                  из € 4300
+                </p>
+              </div>
+              <a class="dream-slide__prev" href=""></a>
+              <a class="dream-slide__next" href=""></a>
+          </article>
+          <article class="dream__art-slide" id="d-slide__2">
+            <div class="dream__phot phot2"></div>
+            <div class="dream__main">
+              <p class="dmt">Открыть балетную школу</p>
+              <p>Здравствуйте! Меня зовут Инга и я пол жизни отдала балету. Сейчас чувствую, что хочу делиться этим с
+                молодым...</p>
+              <div>
+                <p class="perevod">Последний перевод 35 мин назад</p>
+              </div>
+              <div class="dream__line2">
+                <div class="dream__linebott2">
+                </div>
+              </div>
+              <div class="summ">
+                <p>
+                  € 4820 собрано
+                </p>
+                <p class="summ__limit">
+                  из €5000
+                </p>
+              </div>
+              <a class="dream-slide__prev" href=""></a>
+              <a class="dream-slide__next" href=""></a>
+          </article>
+          <article class="dream__art-slide" id="d-slide__3">
+            <div class="dream__phot phot3"></div>
+            <div class="dream__main">
+              <p class="dmt">Хочу побывать на северном полюсе</p>
+              <p>Всем привет! Меня зовут Марк и я хочу отправиться в путешествие на северный полюс...</p>
+              <div>
+                <p class="perevod">Последний перевод 10 мин назад</p>
+              </div>
+              <div class="dream__line3">
+                <div class="dream__linebott3">
+                </div>
+              </div>
+              <div class="summ">
+                <p>
+                  € 2700 собрано
+                </p>
+                <p class="summ__limit">
+                  из € 3500
+                </p>
+              </div>
+            </div>
+            <a class="dream-slide__prev" href=""></a>
+            <a class="dream-slide__next" href=""></a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -413,7 +542,57 @@
           </div>
         </div>
       </div>
+      <article class="possible__slides scroll">
+        <div class="possible-container__slide">
+          <div class="possible__art">
+            <div class="possible__art-content">
+              <div class="possible__art-img">
+                <img src="/assets/img/vozm/free.svg" alt="">
+              </div>
+              <div class="possible__art-text">
+                <p class="possible__art-txt">Бесплатно</p>
+                <p>Абсолютно прозрачная некоммерческая платформа без комиссий за обмен средствами. Мы не аккумулируем
+                  средства участников.</p>
+              </div>
+            </div>
+          </div>
+          <div class="possible__art">
+            <div class="possible__art-content">
+              <div class="possible__art-img">
+                <img src="/assets/img/vozm/options.svg" alt="">
+              </div>
+              <div class="possible__art-text">
+                <p class="possible__art-txt">Без посредников</p>
+                <p>Между участниками нет никаких третьих лиц или посредников. Только прямой обмен средствами.</p>
+              </div>
+            </div>
+          </div>
+          <div class="possible__art">
+            <div class="possible__art-content">
+              <div class="possible__art-img">
+                <img src="/assets/img/vozm/money.svg" alt="">
+              </div>
+              <div class="possible__art-text">
+                <p class="possible__art-txt">Легко</p>
+                <p>Отслеживание роста команды и поступающих переводов, с помощью удобной платформы.</p>
+              </div>
+            </div>
+          </div>
+          <div class="possible__art">
+            <div class="possible__art-content">
+              <div class="possible__art-img">
+                <img src="/assets/img/vozm/ant.svg" alt="">
+              </div>
+              <div class="possible__art-text">
+                <p class="possible__art-txt">Удобно и безопасно</p>
+                <p>Мультиязычный интерфейс и защищенная система с круглосуточной техподдержкой.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
+
 
 
     <section class="reg__dream">
@@ -427,7 +606,7 @@
               <div class="card1__svg card1__svg-anim">
                 <img src="/assets/img/reg__phot.svg" alt="">
               </div>
-              <div class="card1__text">Перетащи сюда изображение или <a class="card1__href" href="#">загрузи с
+              <div class="card1__text">Перетащи сюда изображение или <a class="card1__href" href="#"><input class="input-im" type="image" src="/assets/img/">загрузи с
                   компьютера</a></div>
             </div>
           </div>
@@ -588,5 +767,6 @@
 
 
 
-
+  <script src="/js/main.js"></script>
 </body>
+</html>

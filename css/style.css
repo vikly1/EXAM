@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 body {
@@ -88,22 +88,27 @@ img {
 
 .header {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   left: 0;
   right: 0;
   margin-top: 37.72px;
   z-index: 100;
 }
 
+.input-im{
+  display: none;
+}
+
 .header__bg {
   display: flex;
   background-image: url('/assets/img/fon.jpg');
   background-size: cover;
-  height: 700px;
-  padding-top: 34px;
+  background-position: center center;
   justify-content: center;
-  max-width: 100%;
+  padding-top: 34px;
+  position: relative;
+  height: 700px;
+  background-size: cover;
 }
 
 .header__main {
@@ -112,6 +117,37 @@ img {
   margin: 0 auto;
   width: 1160px;
   max-width: 100%;
+}
+
+.header__main-mobile {
+  display: none;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1160px;
+  max-width: 100%;
+}
+
+.menu__user-mobile{
+  display: flex;
+}
+
+.sub__menu-lines{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  margin-top: 10px;
+  padding-left: 9px;
+  cursor: pointer;
+}
+
+.menu-line{
+  color: var(--head-text-color);
+  height: 1px;
+  width: 18px;
+  padding: 4px;
 }
 
 .logo__place {
@@ -130,7 +166,7 @@ img {
 
 .header-container {
   display: flex;
-  width: 700px;
+  max-width: 100%;
 }
 
 .menu {
@@ -155,6 +191,13 @@ img {
   transition: transform 0.3s;
   align-items: center;
 }
+
+.log_and_lang{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
 
 .header__lang {
   display: flex;
@@ -197,6 +240,75 @@ img {
   transform: scale(1.2);
 }
 
+.dialog__menu{
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+
+}
+
+.dialog__active{
+  visibility: visible;
+}
+
+.dialog__overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dialog-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list{
+  display: flex;
+  list-style: none;
+}
+
+.menu-list ul{
+  list-style: none;
+}
+
+.menu-list a{
+  color: var(--main-text);
+}
+
+.menu-list li{
+  cursor: pointer;
+}
+
+.lang__mob {
+  padding: 10px;
+  gap: 5px;
+  background-color: var(--main-text);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--main-text);
+  background: transparent;
+  color: var(--main-text);
+  width: 117px;
+  height: 44px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.dialog__close{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dialog__close:hover{
+  text-decoration: underline;
+
+}
+
 .title {
   width: 1160px;
   max-width: 100%;
@@ -205,7 +317,9 @@ img {
 }
 
 .title__text {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
 }
 
 .title__text1 {
@@ -217,7 +331,6 @@ img {
   max-width: 100%;
   line-height: 10px;
   margin-top: 200px;
-  width: 1160px;
 }
 
 .title__text2 {
@@ -229,7 +342,6 @@ img {
   line-height: 20px;
   max-width: 100%;
   margin-top: -40px;
-  width: 1160px;
 }
 
 .first__pads {
@@ -394,7 +506,6 @@ img {
   font-size: 1rem;
   filter: drop-shadow(0px 24px 32px rgba(50, 50, 71, 0.05));
   min-height: 100px;
-
 }
 
 .dream__main {
@@ -474,6 +585,43 @@ img {
   border: none;
   border-radius: 10px;
   background: rgba(3, 186, 254, 0.2);
+}
+
+.dream__art__slider{
+  display: none;
+  width: 900px;
+  height: 100%;
+  max-width: 100%;
+}
+
+.dream__art-slide {
+  border-radius: 10px;
+  margin-top: 40px;
+  width: 360px;
+  max-width: 100%;
+  font-size: 1rem;
+  filter: drop-shadow(0px 24px 32px rgba(50, 50, 71, 0.05));
+  min-height: 100px;
+  padding: 20px;
+}
+
+.dream__art-slide a{
+  position: absolute;
+  top: 0px;
+  width: 100px;
+  height: 320px;
+
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.dream__art-container__slide {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  position: relative;
+  display: flex;
+  max-width: 100%;
 }
 
 .summ {
@@ -880,9 +1028,18 @@ img {
 .possible__title {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .possible-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1160px;
+  max-width: 100%;
+}
+
+.possible-container__slide {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -934,6 +1091,17 @@ img {
 .phot3 {
   background-image: url(/assets/img/bears.jpg);
   background-size: cover;
+}
+
+.possible__slides {
+  display: none;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 108px;
+  margin-bottom: 60px;
+  width: 900px;
+  max-width: 100%;
+  margin-top: -30px;
 }
 
 .reg__dream {
@@ -1416,3 +1584,139 @@ img {
   justify-content: center;
   margin-top: 54px;
 }
+
+@media (max-width: 1140px){
+  .possible__slides{
+    display: flex;
+  }
+  .possible-container{
+    display: none;
+  }
+  .possible__art{
+    margin: 20px;
+  }
+
+  .possible-container__slide{
+    width: 900px;
+  }
+}
+
+@media (max-width: 1170px){
+
+  .header__main{
+    width: 1000px;
+  }
+
+  .header-container__list{
+    width: 650px;
+  }
+  .title{
+    width: 1000px;
+  }
+
+  .blue__ocean{
+    width: 1000px;
+    font-size: 1.4rem;
+  }
+
+  .video{
+    width: 1000px;
+  }
+
+  .dream{
+    width: 1000px;
+  }
+
+  .dream__art{
+    width: 300px;
+  }
+  .dream__main{
+    width: 300px;
+  }
+
+  .dream__line1{
+    width: 240px;
+  }
+
+  .dream__linebott1{
+    width: 250px;
+  }
+
+  .dream__line2{
+    width: 211px;
+  }
+
+  .dream__linebott2{
+    width: 250px;
+  }
+
+  .dream__line3{
+    width: 131px;
+  }
+
+  .dream__linebott3{
+    width: 250px;
+  }
+
+  .footer{
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px){
+
+  .reg__dream{
+    display: none;
+  }
+  .blue__ocean{
+    width: 900px;
+    font-size: 1.25rem;
+  }
+  .header__main{
+    display: none;
+  }
+
+  .header__main-mobile{
+    display: flex;
+  }
+
+  .yourdream__main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yourdream__maket{
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .yourdream-wind1{
+    margin: 0 auto;
+    width: 400px;
+    margin-top: -60px;
+  }
+
+  .dream__art__slider{
+    display: flex;
+    max-width: 100%;
+  }
+
+  .dream{
+    width: 95%;
+  }
+  .dream__art-container{
+    display: none;
+  }
+
+  .footer{
+    width: 95%;
+  }
+  .dream__people{
+    width: 95%;
+    max-width: 100%;
+  }
+
+
+}
+
+
