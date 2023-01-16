@@ -5,11 +5,11 @@ const callRequestClose = document.querySelector('#call-request-close');
 const callRequestOverlay = document.querySelector('#call-request-overlay');
 
 function handleOpenRequestDialog() {
-  callRequestDialog.classList.add('menu-line');
+  callRequestDialog.classList.add('dialog__active');
 }
 
 function handleCloseRequestDialog() {
-  callRequestDialog.classList.remove('menu-line');
+  callRequestDialog.classList.remove('dialog__active');
 }
 
 callRequestBtn.addEventListener('click', handleOpenRequestDialog);

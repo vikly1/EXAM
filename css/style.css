@@ -93,6 +93,7 @@ img {
   right: 0;
   margin-top: 37.72px;
   z-index: 100;
+  max-width: 100%;
 }
 
 .input-im{
@@ -241,29 +242,50 @@ img {
 }
 
 .dialog__menu{
+  position: fixed;
+
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
   width: 100%;
   height: 100%;
-
+  top: 0;
+  left: 0;
 }
 
 .dialog__active{
-  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .dialog__overlay {
-  display: none;
   position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
 
 .dialog-content{
+  z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-bottom: 350px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.dialog-content li{
+  padding: 15px;
 }
 
 .menu-list{
@@ -277,6 +299,7 @@ img {
 
 .menu-list a{
   color: var(--main-text);
+  font-size: 1.5rem;
 }
 
 .menu-list li{
@@ -292,8 +315,8 @@ img {
   border: 1px solid var(--main-text);
   background: transparent;
   color: var(--main-text);
-  width: 117px;
-  height: 44px;
+  width: 250px;
+  height: 54px;
   max-width: 100%;
   margin-bottom: 20px;
 }
@@ -319,7 +342,7 @@ img {
 .title__text {
   display: flex;
   flex-direction: column;
-  width: 1160px;
+  width: 100%;
 }
 
 .title__text1 {
@@ -454,6 +477,7 @@ img {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .dream__art-container {
@@ -1597,41 +1621,41 @@ img {
   }
 
   .possible-container__slide{
-    width: 900px;
+
   }
 }
 
 @media (max-width: 1170px){
 
   .header__main{
-    width: 1000px;
+
   }
 
   .header-container__list{
-    width: 650px;
+
   }
   .title{
-    width: 1000px;
+
   }
 
   .blue__ocean{
-    width: 1000px;
+
     font-size: 1.4rem;
   }
 
   .video{
-    width: 1000px;
+
   }
 
   .dream{
-    width: 1000px;
+
   }
 
   .dream__art{
-    width: 300px;
+
   }
   .dream__main{
-    width: 300px;
+
   }
 
   .dream__line1{
@@ -1669,7 +1693,7 @@ img {
     display: none;
   }
   .blue__ocean{
-    width: 900px;
+
     font-size: 1.25rem;
   }
   .header__main{
@@ -1678,6 +1702,7 @@ img {
 
   .header__main-mobile{
     display: flex;
+
   }
 
   .yourdream__main{
@@ -1692,7 +1717,7 @@ img {
 
   .yourdream-wind1{
     margin: 0 auto;
-    width: 400px;
+
     margin-top: -60px;
   }
 
@@ -1712,10 +1737,13 @@ img {
     width: 95%;
   }
   .dream__people{
-    width: 95%;
-    max-width: 100%;
+
+
   }
 
+  .title__text {
+
+  }
 
 }
 

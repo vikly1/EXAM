@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="body">
+<body class="body" id="">
 
   <header class="header">
     <div class="header__main">
@@ -75,15 +75,15 @@
           </a>
         </div>
         <button class="sub__menu-lines">
-          <span class="menu-line" id="#call-request">☰</span>
+          <span class="menu-line" id="call-request">☰</span>
         </button>
       </div>
     </div>
   </header>
 
 
-  <div class="dialog__menu" id="#call-request-dialog">
-    <div class="dialog__overlay" id="#call-request-overlay"></div>
+  <div class="dialog__menu dialog__active" id="call-request-dialog">
+    <div class="dialog__overlay" id="call-request-overlay"></div>
     <div class="dialog-content">
       <nav class="menu-list" id="call-request-close">
         <ul>
@@ -108,7 +108,6 @@
         </ul>
       </nav>
       <button class="lang__mob">Русский</button>
-      <button class="dialog__close">Закрыть</button>
     </div>
   </div>
 
@@ -125,7 +124,7 @@
             <p>Поделись своей мечтой</p>
             <p>и получи поддержку сообщества!</p>
           </div>
-          <div class="first__pads">
+           <div class="first__pads">
             <button type="button" class="btn__nabor first__pad1-size">Начать сбор средств</button>
             <button type="button" class="btn__video first__pad2-size">Смотреть видео</button>
           </div>
