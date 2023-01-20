@@ -1962,6 +1962,9 @@ width: 95%;
   .title__text2{
     font-size: 20px;
   }
+  .header__bg{
+    height: 550px;
+  }
 }
 
 @media (max-width: 370px) {
