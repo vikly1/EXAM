@@ -132,6 +132,7 @@ img {
 
 .menu__user-mobile{
   display: flex;
+  z-index: 100000;
 }
 
 .sub__menu-lines{
@@ -244,7 +245,6 @@ img {
 
 .dialog__menu{
   position: fixed;
-
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -258,6 +258,7 @@ img {
 }
 
 .dialog__active{
+  display: none;
   opacity: 1;
   pointer-events: auto;
 }
@@ -419,7 +420,7 @@ img {
   border: 1px solid var(--head-text-color);
   color: var(--head-text-color);
   height: 50px;
-  font-size: 1.3rem;
+  font-size: 0.875rem;
   font-weight: 700;
   max-width: 95%;
 }
@@ -1783,6 +1784,10 @@ width: 95%;
 
 @media (max-width: 1025px){
 
+  .dialog__active {
+    display: flex;
+  }
+
   .scroll::-webkit-scrollbar-thumb {
     background-color: var(--head-text-color);
   }
@@ -1871,6 +1876,7 @@ width: 95%;
 
   .btn__nabor{
     width: 100%;
+    font-size: 21px;
   }
 
   .btn__video{
